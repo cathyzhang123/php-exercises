@@ -31,7 +31,7 @@ echo "<hr style=\"margin 1rem 0\">";
 +---+
 Print the following sentence as a paragraph: PHP stands for "Hypertext Preprocessor"!
 */
- echo "<p><em><strong>".$phpmeaning."</strong></em></p>";
+ echo "<p><em><strong>$phpmeaning</strong></em></p>";
 
 
 // task separator
@@ -54,11 +54,11 @@ $css = "CSS - Stands for Cascading Stylesheet";
 $js = "JS - Stands for JavaScript";
 $php = "PHP - Stands for Hypertext Preprocessor";
 $sql = "SQL - Stands for Structural Query Language";
-echo "<em><strong>".$html."</strong></em><br>";
-echo "<em><strong>".$css."</strong></em><br>";
-echo "<em><strong>".$js."</strong></em><br>";
-echo "<em><strong>".$php."</strong></em><br>";
-echo "<em><strong>".$sql."</strong></em>";   
+echo "<em><strong>$html</strong></em><br>";
+echo "<em><strong>$css</strong></em><br>";
+echo "<em><strong>$js</strong></em><br>";
+echo "<em><strong>$php</strong></em><br>";
+echo "<em><strong>$sql</strong></em>";   
    
    
    
@@ -78,11 +78,11 @@ PHP - Stands for Hypertext Preprocessor
 SQL - Stands for Structural Query Language
 */
 $list="<ul><em><strong>
-    <li>".$html."</li>
-    <li>".$css."</li>
-    <li>".$js."</li>
-    <li>".$php."</li>
-    <li>".$sql."</li>
+    <li>$html</li>
+    <li>$css</li>
+    <li>$js</li>
+    <li>$php</li>
+    <li>$sql</li>
     </strong></em></ul>";
 
 echo $list;
