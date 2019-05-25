@@ -19,7 +19,7 @@ echo "<hr style=\"margin 1rem 0\">";
 Print the sentence: PHP stands for "Hypertext Preprocessor"!
 */
 $phpmeaning = 'PHP stands for "Hypertext Preprocessor"!';
-echo "<em><strong>".$phpmeaning."</strong></em>";
+echo "<em><strong>$phpmeaning</strong></em>";
 
 
 // task separator
