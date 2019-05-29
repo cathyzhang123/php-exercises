@@ -104,18 +104,26 @@ Every key of food_assoc (pizza, cheesecake) will now have the value that is asso
 and carries the information about the type and origin
 */
 
-$type = [
-  $food[0] => "Cocktail",
-  $food[1] => "Soup",
-  $food[2] => "Main Course",
-  $food[3] => "Dessert"
-];
+$food_assoc = [
+  $food[0] => [
+      "type" => "Cocktail",
+      "origin" => "Italy"
+  ],
 
-$origin = [
-  $food[0] => "Italy",
-  $food[1] => "Canada",
-  $food[2] => "China",
-  $food[3] => "England"
+  $food[1] => [
+      "type" => "Soup",
+      "origin" => "Canada"
+  ], 
+
+  $food[2] => [
+      "type" => "Main Course",
+      "origin" => "China"
+  ],
+
+  $food[3] => [
+      "type" => "Dessert",
+      "origin" => "England"
+  ]
 ];
 
 
@@ -125,10 +133,11 @@ Print every food, type and origin in the separate lines so it renders like this:
 pizza | main counrse | Italy
 cheesesake | desert | Greece
 */
-echo $food[0]." | ".$type[$food[0]]." | ".$origin[$food[0]]."<br>";
-echo $food[1]." | ".$type[$food[1]]." | ".$origin[$food[1]]."<br>";
-echo $food[2]." | ".$type[$food[2]]." | ".$origin[$food[2]]."<br>";
-echo $food[3]." | ".$type[$food[3]]." | ".$origin[$food[3]];
+echo $food[0]." | ".$food_assoc[$food[0]]["type"]." | ".$food_assoc[$food[0]]["origin"]."<br>";
+echo $food[1]." | ".$food_assoc[$food[1]]["type"]." | ".$food_assoc[$food[1]]["origin"]."<br>";
+echo $food[2]." | ".$food_assoc[$food[2]]["type"]." | ".$food_assoc[$food[2]]["origin"]."<br>";
+echo $food[3]." | ".$food_assoc[$food[3]]["type"]." | ".$food_assoc[$food[3]]["origin"];
+
 
 
 // task separator
@@ -165,23 +174,23 @@ echo "<table class='table table-bordered w-50'>
   </tr>  
   <tr>
     <td>{$food[0]}</td>
-    <td>{$type[$food[0]]}</td>
-    <td>{$origin[$food[0]]}</td>
+    <td>{$food_assoc[$food[0]]["type"]}</td>
+    <td>{$food_assoc[$food[0]]["origin"]}</td>
   </tr>
   <tr>
     <td>{$food[1]}</td>
-    <td>{$type[$food[1]]}</td>
-    <td>{$origin[$food[1]]}</td>
+    <td>{$food_assoc[$food[1]]["type"]}</td>
+    <td>{$food_assoc[$food[1]]["origin"]}</td>
   </tr>
   <tr>
     <td>{$food[2]}</td>
-    <td>{$type[$food[2]]}</td>
-    <td>{$origin[$food[2]]}</td>
+    <td>{$food_assoc[$food[2]]["type"]}</td>
+    <td>{$food_assoc[$food[2]]["origin"]}</td>
   </tr>
   <tr>
     <td>{$food[3]}</td>
-    <td>{$type[$food[3]]}</td>
-    <td>{$origin[$food[3]]}</td>
+    <td>{$food_assoc[$food[3]]["type"]}</td>
+    <td>{$food_assoc[$food[3]]["origin"]}</td>
   </tr>
   </table>";
 ?>
