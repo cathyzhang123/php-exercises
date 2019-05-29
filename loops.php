@@ -55,7 +55,7 @@ Declare and assign the indexed array with your favourite food
 (at least 4 array elements). Name the array food.
 */
 $food = [
-	   "Pink lady",
+	 "Pink lady",
   	 "Chicken noodle soup",
   	 "Mongolian beef",
   	 "Strawberry cake"
@@ -179,7 +179,7 @@ foreach ($food_assoc as $k => $v){
   	echo "<li>{$k}</li>";
     	echo "<ul>";  	
     		echo "<li>type: {$food_assoc[$k]["type"]}</li>";  		
-        echo "<li>origin: {$food_assoc[$k]["origin"]}</li>";     
+        	echo "<li>origin: {$food_assoc[$k]["origin"]}</li>";     
       echo "</ul>";
 	}
 echo "</ul>";
