@@ -178,8 +178,8 @@ echo "<ul>";
 foreach ($food_assoc as $k => $v){
   	echo "<li>{$k}</li>";
     	echo "<ul>";  	
-    		echo "<li>type: {$food_assoc[$k]["type"]}</li>";  		
-        	echo "<li>origin: {$food_assoc[$k]["origin"]}</li>";     
+    		echo "<li>type: {$v["type"]}</li>";  		
+        	echo "<li>origin: {$v["origin"]}</li>";     
       echo "</ul>";
 	}
 echo "</ul>";
