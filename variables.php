@@ -150,7 +150,7 @@ should be contained by figcaption element):
 ?>
 
 <figure>
-  <img src="https://picsum.photos/id/788/300/300" alt="placeholder-image">
+  <img src="https://placehold.jp/24/e8d2ae/fff/300x300.png" alt="placeholder-image">
   <figcaption><?php echo "armchair: ".number_format($total, 2); ?></figcaption>
 </figure>
 
