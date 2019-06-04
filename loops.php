@@ -156,9 +156,12 @@ $food_assoc = [
 Loop through $food_assoc and use print_r() to print the entire meal course 
 (entire array that includes type and origin).
 */
-echo "<pre>";
-print_r($food_assoc);
-echo "</pre>";
+foreach ($food_assoc as $k => $v){
+  echo $k;
+  echo "<pre>";
+  print_r($v);
+  echo "</pre>";
+}
 
 /*
 Loop through $food_assoc and print the meal names (keys of $food_assoc)
