@@ -107,7 +107,7 @@ If the function for calculating the area of a triangle looks like this:
 */
 function calculateTriangleArea($base, $height) {
 	global $area;
-    $area =  ($base * $height) / 2;   
+        $area =  ($base * $height) / 2;   
 }
 
 /*
